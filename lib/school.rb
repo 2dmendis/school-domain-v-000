@@ -9,15 +9,17 @@ class School
   end 
   
   def add_student(name, grade)
+    count = 0 
     @roster.each do |grade_num, student|
       if grade_num == grade 
-        @roster[grade] << name
-      else 
-        @roster[grade] = []
-        @roster[grade] << name 
+        count += 1 
       end 
-    #@roster[grade] = []
-  end 
+    end 
+    if count == 0 
+      @roster[grade] = []
+      @roster[grade] << name 
+    else 
+      @roster[grade] << name 
     
   end 
 end 
