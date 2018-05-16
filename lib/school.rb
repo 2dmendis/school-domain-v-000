@@ -14,6 +14,7 @@ class School
         @roster[grade] << name 
       end 
     #@roster[grade] = []
+  end 
     
   end 
 end 
