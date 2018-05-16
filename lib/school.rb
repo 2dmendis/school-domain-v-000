@@ -31,5 +31,6 @@ class School
     @roster.each do |grade_num, student|
       student.sort!
     end 
+    @roster
   end 
 end 
